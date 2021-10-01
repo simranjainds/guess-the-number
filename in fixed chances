@@ -1,0 +1,19 @@
+x=9
+number_of_guesses =1
+print("you have 10 guesses onle")
+while (number_of_guesses <10):
+    num = int(input("guess your number:"))
+    if(num<9):
+        print("number is small than real one , guess again")
+        print("left with",10-number_of_guesses,"guesses")
+    elif(num>9):
+        print("number is greater than real one , guess again")
+        print("left with",10-number_of_guesses,"guesses")
+    else:
+        print("you won")
+        print("you took",number_of_guesses,"guesses to win")
+        break
+    number_of_guesses=number_of_guesses+1
+    
+if (number_of_guesses>10):
+    print("game over")
